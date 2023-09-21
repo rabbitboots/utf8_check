@@ -2,18 +2,16 @@
 
 # utf8Check
 
-Checks the encoding and code points in a UTF-8 string. Returns a byte position if the string is invalid.
+Checks the encoding and code points of UTF-8 strings, returning a byte position if the string is invalid.
 
-The intended use case is to check strings which may be passed to LÖVE text functions (e.g. `love.graphics.print()`). (`uft8.len()` checks the UTF-8 encoding, but it also allows some invalid code points which will raise an error.)
+The intended use case is to check strings which may be passed to LÖVE text functions (e.g. `love.graphics.print()`). (`uft8.len()` checks the UTF-8 encoding, but it also allows through some invalid code points, which will raise an error.)
 
-While the checker is more strict than LÖVE, it should not pass any UTF-8 sequence that LÖVE would reject.
+While the checker rejects more byte patterns than LÖVE, it should not pass any UTF-8 sequence that LÖVE would reject.
 
 Tested with LÖVE 12.0-development (c4aaab6).
 
 
 ## Usage Example
-
-Only `utf8_check.lua` is required.
 
 ```lua
 local utf8Check = require("path.to.utf8_check")
