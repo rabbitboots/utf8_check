@@ -1,3 +1,5 @@
+**NOTE: This module is no longer maintained. [utf8Tools.check](https://github.com/rabbitboots/utf8_tools) can be used instead.**
+
 **Version 1.0.0**
 
 # utf8Check
